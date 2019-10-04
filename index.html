@@ -351,17 +351,11 @@
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
   <script>
 
     $(document).ready(function () {
-
-    
-        if (window.location.protocol != 'https:') {
-            location.href = location.href.replace("http://", "https://");
-        }
-    
-
+  
       // Transition effect for navbar and back-to-top icon
       $(window).scroll(function () {
         // checks if window is scrolled more than 500px, adds/removes solid class
