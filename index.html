@@ -356,6 +356,12 @@
 
     $(document).ready(function () {
 
+    
+        if (window.location.protocol != 'https:') {
+            location.href = location.href.replace("http://", "https://");
+        }
+    
+
       // Transition effect for navbar and back-to-top icon
       $(window).scroll(function () {
         // checks if window is scrolled more than 500px, adds/removes solid class
