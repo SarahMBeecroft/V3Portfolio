@@ -2,7 +2,7 @@
   "name": "v3portfolio",
   "version": "1.0.0",
   "description": "Portfolio take 3",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
