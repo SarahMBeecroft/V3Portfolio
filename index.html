@@ -355,6 +355,11 @@
   <script>
 
     $(document).ready(function () {
+
+      // Redirects http to https
+        if (window.location.protocol != 'https:') {
+            location.href = location.href.replace("http://", "https://");
+        }
   
       // Transition effect for navbar and back-to-top icon
       $(window).scroll(function () {
