@@ -24,7 +24,12 @@ body {
     float: right !important; }
   
   .pull-left-sm {
-    float: left !important; } }
+    float: left !important; }
+  
+  body {
+    overflow-x: hidden;
+  }
+  }
 
 @media (min-width: 768px) {
   .pull-right-sm {
