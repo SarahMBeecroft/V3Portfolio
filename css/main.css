@@ -9,6 +9,7 @@ body {
 @media (max-width: 600px) {
   body {
     overflow-x: hidden!important;
+    margin-left: 0!important;
   }
 }
 
@@ -16,7 +17,7 @@ body {
 .about-tools ul li, .contact-social-icons ul a li {
   text-align: center; }
 
-.cente#71a3b6 {
+.center {
   float: none;
   margin-left: auto;
   margin-right: auto; }
