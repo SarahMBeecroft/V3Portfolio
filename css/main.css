@@ -19,21 +19,6 @@ body {
   clear: both;
   margin-top: 10px; }
 
-@media (max-width: 375px) {
-  .pull-right-sm {
-    float: right !important; }
-  
-  .pull-left-sm {
-    float: left !important; }
-
-  .portfolio-projects--image {
-    left: 10px;
-  }
-  
-  body {
-    overflow-x: hidden;
-  }
-  }
 
 @media (min-width: 768px) {
   .pull-right-sm {
