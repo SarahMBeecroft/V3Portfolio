@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
@@ -197,7 +201,8 @@ body > .container-fluid {
   .about-last {
     padding-top: 3.125em;
     padding-bottom: 0;
-    font-size: 1.125em; }
+    font-size: 1.125em;
+    margin-right: 0!important; }
     @media screen and (min-width: 992px) {
       .about-last {
         padding-top: 0; } }
