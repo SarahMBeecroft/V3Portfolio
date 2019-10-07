@@ -1,3 +1,4 @@
+/* Removes horizontal scroll bar from page */
 body {
   overflow-x: hidden;
 }
@@ -17,6 +18,13 @@ body {
 .break {
   clear: both;
   margin-top: 10px; }
+
+@media (min-width: 375px) {
+  .pull-right-sm {
+    float: right !important; }
+  
+  .pull-left-sm {
+    float: left !important; } }
 
 @media (min-width: 768px) {
   .pull-right-sm {
