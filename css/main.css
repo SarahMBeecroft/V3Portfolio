@@ -8,7 +8,7 @@ body {
 /* Large devices (large desktops, 1200px and up) */
 @media (max-width: 600px) {
   body {
-    background-color: pink;
+    overflow-x: hidden!important;
   }
 }
 
