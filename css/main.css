@@ -25,6 +25,10 @@ body {
   
   .pull-left-sm {
     float: left !important; }
+
+  .portfolio-projects--image {
+    left: 10px;
+  }
   
   body {
     overflow-x: hidden;
