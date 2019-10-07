@@ -19,7 +19,7 @@ body {
   clear: both;
   margin-top: 10px; }
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   .pull-right-sm {
     float: right !important; }
   
