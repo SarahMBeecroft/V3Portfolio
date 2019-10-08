@@ -6,13 +6,6 @@ body {
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
-@media (max-width: 600px) {
-  body {
-    overflow-x: hidden!important;
-    margin-left: 0!important;
-  }
-}
-
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
 .about-tools ul li, .contact-social-icons ul a li {
   text-align: center; }
@@ -26,6 +19,17 @@ body {
   clear: both;
   margin-top: 10px; }
 
+@media (max-width: 450px) {
+ * {
+  overflow-x: hidden;
+ }
+
+ .portfolio-projects--image {
+  overflow-y: hidden;
+  margin-left: 10px;
+ }
+  
+  }
 
 @media (min-width: 768px) {
   .pull-right-sm {
