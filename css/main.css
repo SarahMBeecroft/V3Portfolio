@@ -20,16 +20,17 @@ body {
   margin-top: 10px; }
 
 @media (max-width: 450px) {
- * {
-  overflow-x: hidden;
- }
-
- .portfolio-projects--image {
-  overflow-y: hidden;
-  margin-left: 10px;
- }
-  
+  .container-fluid {
+     overflow-x: hidden;
   }
+   
+   
+  .portfolio-projects--image {
+    overflow-y: hidden;
+    margin-left: 8px;
+  }
+   
+}
 
 @media (min-width: 768px) {
   .pull-right-sm {
