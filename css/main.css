@@ -19,7 +19,7 @@ body {
   clear: both;
   margin-top: 10px; }
 
-@media (max-width: 450px) {
+@media (max-width: 460px) {
   .container-fluid {
      overflow-x: hidden;
   }
