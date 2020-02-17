@@ -124,8 +124,7 @@
 
         <div class="row break">
           <div class="col-md-6 about-last">
-            <p class="text-center">Check out some of my projects <span class="glyphicon glyphicon-arrow-down"></span>
-            </p>
+            <button id="nav-portfolio"><a href="#portfolio" class="goToPortfolio">Check out some of my projects<span class="glyphicon glyphicon-arrow-down"></span></a></button>
           </div>
         </div>
 
@@ -263,19 +262,19 @@
             <div class="row">
 
               <div class="col-sm-5 text-center">
-                <h4 class="portfolio-projects--title"><a href="https://github.com/SarahMBeecroft/Google-Books-Search"
-                    target="_blank"><i class="fa1 fa fa-github"></i></a>&nbsp;&nbsp;Google Books Search</h4>
-                <p class="portfolio-projects--desc">Locate books using Google Books API</p>
-                <p class="portfolio-projects--desc">Uses: HTML, CSS, JavaScript, jQuery, Google Books API</p>
-                <a class="btn btn-rounded portfolio-projects--btn" href="https://sarah-google-books-app.herokuapp.com/"
+                <h4 class="portfolio-projects--title"><a href="https://github.com/SarahMBeecroft/Quote_Generator"
+                    target="_blank"><i class="fa1 fa fa-github"></i></a>&nbsp;&nbsp;Rick and Morty Quote Generator</h4>
+                <p class="portfolio-projects--desc">Random quotes and sound bites for Rick and Morty fans</p>
+                <p class="portfolio-projects--desc">Uses: HTML, CSS, JavaScript, and jQuery</p>
+                <a class="btn btn-rounded portfolio-projects--btn" href="https://sarahmbeecroft.github.io/Quote_Generator/"
                   target="_blank" role="button">View Project</a>
               </div>
 
               <div class="col-sm-7 text-center">
 
-                <a href="https://sarah-google-books-app.herokuapp.com/" target="_blank">
+                <a href="https://sarahmbeecroft.github.io/Quote_Generator/" target="_blank">
                   <div data-content="See app in action &#8628;" class="portfolio-projects--image">
-                    <img class="portfolio-projects--image" src="img/books.jpg">
+                    <img class="portfolio-projects--image" src="img/rickandmorty.jpg">
                   </div>
                 </a>
 
@@ -359,9 +358,9 @@
     $(document).ready(function () {
 
     // Redirects http to https
-        if (window.location.protocol != 'https:') {
-            location.href = location.href.replace("http://", "https://");
-        }
+       // if (window.location.protocol != 'https:') {
+         //   location.href = location.href.replace("http://", "https://");
+        //}
   
       // Transition effect for navbar and back-to-top icon
       $(window).scroll(function () {
