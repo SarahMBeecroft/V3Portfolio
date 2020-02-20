@@ -15,6 +15,9 @@
   <!-- Links to Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway&display=swap" rel="stylesheet">
 
+  <!-- Links to Font Awesome -->
+  <script src="https://kit.fontawesome.com/ef5186996b.js"></script>
+
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -44,7 +47,7 @@
           <li class="nav-title" id="nav-portfolio"><a href="#portfolio">Portfolio</a></li>
           <li class="nav-title" id="nav-contact"><a href="#contact">Contact</a></li>
           <li class="nav-title"><a href="https://portfolio.sarahbeecroft.me/Sarah_Beecroft_Resume_October_2019V2.pdf"
-            target="_blank" id="resume">Resume</a></li>
+              target="_blank" id="resume">Resume</a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->
@@ -124,219 +127,89 @@
 
         <div class="row break">
           <div class="col-md-6 about-last">
-            <button id="nav-portfolio"><a href="#portfolio" class="goToPortfolio">Check out some of my projects<span class="glyphicon glyphicon-arrow-down"></span></a></button>
+            <button id="nav-portfolio"><a href="#portfolio" class="goToPortfolio">Check out some of my projects<span
+                  class="glyphicon glyphicon-arrow-down"></span></a></button>
           </div>
         </div>
 
       </div>
     </div><!-- End #About -->
 
+
+    <!-- Portfolio Section -->
     <div id="portfolio" class="row cover">
-      <h2 class="text-center">Portfolio</h2>
-      <div class="container">
+      <h2 class="text-center portfolioHeader">Portfolio</h2>
+    </div>
 
-        <div class="row portfolio-projects">
-          <!-- Two project row-->
-
-          <div class="col-lg-6">
-            <!--1st side project -->
-            <div class="row">
-
-              <div class="col-sm-5 text-center">
-                <h4 class="portfolio-projects--title"><a href="https://github.com/SarahMBeecroft/Project-1"
-                    target="_blank"><i class="fa1 fa fa-github"></i></a>&nbsp;&nbsp;SuperSearch</h4>
-                <p class="portfolio-projects--desc">Your all-in-one comic book resource</p>
-                <p class="portfolio-projects--desc">Uses: HTML, CSS, JavaScript, Firebase</p>
-                <a class="btn btn-rounded portfolio-projects--btn" href="https://sarahmbeecroft.github.io/Project-1/"
-                  target="_blank" role="button">View Project</a>
-              </div>
-
-              <div class="col-sm-7 text-center">
-
-                <a href="https://sarahmbeecroft.github.io/Project-1/" target="_blank">
-                  <div data-content="See app in action &#8628;" class="portfolio-projects--image">
-                    <img class="portfolio-projects--image" src="img/supersearch.jpg">
-                  </div>
-                </a>
-
-              </div>
-
-            </div>
+    <div class="container-fluid portfolioContainer">
+    
+      <div class="row">
+        <div class="col-md-3 col-xs-3">
+          <h5> <a href="https://github.com/SarahMBeecroft/Project-1" target="_blank"><i
+            class="fab fa-github-alt"></i></a>
+        &nbsp;SuperSearch</h5>
+          <div class="box box1">
+          <a href="https://sarahmbeecroft.github.io/Project-1/" target="_blank"><img src="./img/supersearch.jpg"
+                class="portfolio-projects--image"></a>
           </div>
-
-          <div class="col-lg-6">
-            <!--2nd side project -->
-            <div class="row">
-
-              <div class="col-sm-5 text-center pull-right-sm">
-                <!--flipped on small, unflipped on large-->
-                <h4 class="portfolio-projects--title"><a href="https://github.com/SarahMBeecroft/Project-3"
-                    target="_blank"><i class="fa1 fa fa-github"></i></a>&nbsp;&nbsp;Hop to It</h4>
-                <p class="portfolio-projects--desc">Narrow down beer selections in a sea of choice</p>
-                <p class="portfolio-projects--desc">Uses: HTML, CSS, Materialize, React, Express, MongoDB</p>
-                <a class="btn btn-rounded portfolio-projects--btn" href="https://hoptoit.herokuapp.com/" target="_blank"
-                  role="button">View Project</a>
-              </div>
-
-              <div class="col-sm-7 text-center pull-right-sm">
-
-                <a href="https://hoptoit.herokuapp.com/" target="_blank">
-                  <div data-content="See app in action &#8628;" class="portfolio-projects--image">
-                    <img class="portfolio-projects--image" src="img/hoptoit.jpg">
-                  </div>
-                </a>
-
-              </div>
-
-            </div>
-          </div>
-
         </div>
-        <!--end Two project row-->
 
-        <div class="row portfolio-projects">
-          <!-- Opposite Two project row-->
-
-          <div class="col-lg-6">
-            <!--1st side project -->
-            <div class="row">
-
-              <div class="col-sm-5 text-center">
-                <h4 class="portfolio-projects--title"><a href="https://github.com/SarahMBeecroft/Word-Guess-Game"
-                    target="_blank"><i class="fa1 fa fa-github"></i></a>&nbsp;&nbsp;Star Wars Hangman</h4>
-                <p class="portfolio-projects--desc">Star Wars themed hangman app</p>
-                <p class="portfolio-projects--desc">Uses: HTML, CSS, JavaScript</p>
-                <a class="btn btn-rounded portfolio-projects--btn"
-                  href="https://sarahmbeecroft.github.io/Word-Guess-Game/" target="_blank" role="button">View
-                  Project</a>
-              </div>
-
-              <div class="col-sm-7 text-center">
-
-                <a href="https://sarahmbeecroft.github.io/Word-Guess-Game/" target="_blank">
-                  <div data-content="See app in action &#8628;" class="portfolio-projects--image">
-                    <img class="portfolio-projects--image" src="img/starwars.jpg">
-                  </div>
-                </a>
-
-              </div>
-
-            </div>
+        <div class="col-md-3 col-xs-3">
+          <h5> <a href="https://github.com/SarahMBeecroft/Word-Guess-Game" target="_blank"><i
+              class="fab fa-github-alt"></i></a>
+          &nbsp;Star Wars Hangman</h5>
+          <div class="box box3">
+            <a href="https://sarahmbeecroft.github.io/Word-Guess-Game/" target="_blank"><img src="./img/starwars.jpg"
+                class="portfolio-projects--image"></a>
           </div>
-
-          <div class="col-lg-6">
-            <!--2nd side project -->
-            <div class="row">
-
-              <div class="col-sm-5 text-center pull-right-sm">
-                <!--flipped on small, unflipped on large-->
-                <h4 class="portfolio-projects--title"><a href="https://github.com/SarahMBeecroft/clicky-game"
-                    target="_blank"><i class="fa1 fa fa-github"></i></a>&nbsp;&nbsp;Stranger Things Clicky Game</h4>
-                <p class="portfolio-projects--desc">Stranger Things themed clicky memory game</p>
-                <p class="portfolio-projects--desc">Uses: HTML, CSS, JavaScript, React</p>
-                <a class="btn btn-rounded portfolio-projects--btn"
-                  href="https://strangerthings-clickygame.herokuapp.com/" target="_blank" role="button">View Project</a>
-              </div>
-
-              <div class="col-sm-7 text-center pull-right-sm">
-
-                <a href="https://strangerthings-clickygame.herokuapp.com/" target="_blank">
-                  <div data-content="See app in action &#8628;" class="portfolio-projects--image">
-                    <img class="portfolio-projects--image" src="img/strangerthings.jpg">
-                  </div>
-                </a>
-
-              </div>
-
-            </div>
-          </div>
-
         </div>
-        <!--end Opposite Two project row-->
 
-        <div class="row portfolio-projects">
-          <!-- Two project row-->
-
-          <div class="col-lg-6">
-            <!--1st side project -->
-            <div class="row">
-
-              <div class="col-sm-5 text-center">
-                <h4 class="portfolio-projects--title"><a href="https://github.com/SarahMBeecroft/Quote_Generator"
-                    target="_blank"><i class="fa1 fa fa-github"></i></a>&nbsp;&nbsp;Rick and Morty Quote Generator</h4>
-                <p class="portfolio-projects--desc">Random quotes and sound bites for Rick and Morty fans</p>
-                <p class="portfolio-projects--desc">Uses: HTML, CSS, JavaScript, and jQuery</p>
-                <a class="btn btn-rounded portfolio-projects--btn" href="https://sarahmbeecroft.github.io/Quote_Generator/"
-                  target="_blank" role="button">View Project</a>
-              </div>
-
-              <div class="col-sm-7 text-center">
-
-                <a href="https://sarahmbeecroft.github.io/Quote_Generator/" target="_blank">
-                  <div data-content="See app in action &#8628;" class="portfolio-projects--image">
-                    <img class="portfolio-projects--image" src="img/rickandmorty.jpg">
-                  </div>
-                </a>
-
-              </div>
-
-            </div>
+        <div class="col-md-3 col-xs-3">
+          <h5><a href="https://github.com/SarahMBeecroft/Quote_Generator" target="_blank"><i
+              class="fab fa-github-alt"></i></a>
+         Rick and Morty Quote Generator</h5>
+          <div class="box box1">
+            <a href="https://sarahmbeecroft.github.io/Quote_Generator/" target="_blank"><img
+                src="./img/rickandmorty.jpg" class="portfolio-projects--image"></a>
           </div>
-
-          <div class="col-lg-6">
-            <!--2nd side project -->
-            <div class="row">
-
-              <div class="col-sm-5 text-center pull-right-sm">
-                <!--flipped on small, unflipped on large-->
-                <h4 class="portfolio-projects--title"><a href="https://github.com/SarahMBeecroft/GifTastic"
-                    target="_blank"><i class="fa1 fa fa-github"></i></a>&nbsp;&nbsp;Reaction GIFs</h4>
-                <p class="portfolio-projects--desc">Get quick reaction GIFs using the GIPHY API</p>
-                <p class="portfolio-projects--desc">Uses: HTML, CSS, JavaScript, GIPHY API</p>
-                <a class="btn btn-rounded portfolio-projects--btn" href="https://sarahmbeecroft.github.io/GifTastic/"
-                  target="_blank" role="button">View Project</a>
-              </div>
-
-              <div class="col-sm-7 text-center pull-right-sm">
-
-                <a href="https://sarahmbeecroft.github.io/GifTastic/" target="_blank">
-                  <div data-content="See app in action &#8628;" class="portfolio-projects--image">
-                    <img class="portfolio-projects--image" src="img/reaction.jpeg">
-                  </div>
-                </a>
-              </div>
-
-            </div>
-          </div>
-
         </div>
-        <!--end Two project row-->
 
-      </div>
-    </div><!-- End #Portfolio -->
+        <div class="col-md-3 col-xs-3">
+            <h5><a href="https://github.com/SarahMBeecroft/GifTastic" target="_blank"><i class="fab fa-github-alt"></i></a>
+          &nbsp;Reaction GIF Generator</h5>
+          <div class="box box6">
+            <a href="https://sarahmbeecroft.github.io/GifTastic/" target="_blank"><img src="./img/reaction.jpeg"
+                class="portfolio-projects--image"></a>
+          </div>
+        </div>
+ 
+ 
+    </div><!-- End Row -->
 
-    <div id="contact" class="row cover bottom">
-      <h2 class="text-center contact-header">Contact Me</h2>
-      <p class="text-center contact-email">Get in touch with me <span class="glyphicon glyphicon-arrow-right"></span>
-        <a href="mailto:contact@sarahbeecroft.me" id="emailLink">contact@sarahbeecroft.me</p></a>
+  </div><!-- End #Portfolio -->
 
-      <div class="text-center contact-social-icons">
-        <p>Or find me on:</p>
+  <div id="contact" class="row cover bottom">
+    <h2 class="text-center contact-header">Contact Me</h2>
+    <p class="text-center contact-email">Get in touch with me <span class="glyphicon glyphicon-arrow-right"></span>
+      <a href="mailto:contact@sarahbeecroft.me" id="emailLink">contact@sarahbeecroft.me</p></a>
 
-        <ul>
-          <a href="https://www.linkedin.com/in/sarah-beecroft-347b8747/" target="_blank">
-            <li><i class="fa fa-linkedin-square"></i> LinkedIn</li>
-          </a>
-          <a href="https://github.com/SarahMBeecroft" target="_blank">
-            <li><i class="fa fa-github"></i> Github</li>
-          </a>
-          <a href="https://twitter.com/sarah_bean" target="_blank">
-            <li><i class="fa fa-twitter"></i> Twitter</li>
-          </a>
-        </ul>
-      </div>
+    <div class="text-center contact-social-icons">
+      <p>Or find me on:</p>
 
-    </div><!-- End #Contact -->
+      <ul>
+        <a href="https://www.linkedin.com/in/sarah-beecroft-347b8747/" target="_blank">
+          <li><i class="fa fa-linkedin-square"></i> LinkedIn</li>
+        </a>
+        <a href="https://github.com/SarahMBeecroft" target="_blank">
+          <li><i class="fa fa-github"></i> Github</li>
+        </a>
+        <a href="https://twitter.com/sarah_bean" target="_blank">
+          <li><i class="fa fa-twitter"></i> Twitter</li>
+        </a>
+      </ul>
+    </div>
+
+  </div><!-- End #Contact -->
 
   </div><!-- End .container-fluid -->
 
@@ -357,11 +230,11 @@
 
     $(document).ready(function () {
 
-    // Redirects http to https
-       if (window.location.protocol != 'https:') {
-          location.href = location.href.replace("http://", "https://");
-        }
-  
+      // Redirects http to https
+      //if (window.location.protocol != 'https:') {
+      // location.href = location.href.replace("http://", "https://");
+      //}
+
       // Transition effect for navbar and back-to-top icon
       $(window).scroll(function () {
         // checks if window is scrolled more than 500px, adds/removes solid class

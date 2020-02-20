@@ -6,7 +6,7 @@ body {
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
-@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento');
 .about-tools ul li,
 .contact-social-icons ul a li {
   text-align: center;
@@ -84,13 +84,13 @@ a {
 
 body {
   height: 100%;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color: #71a3b6;
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
 h1 {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 46px;
   color: #020918;
 }
@@ -99,12 +99,12 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: #020918;
 }
 
 p {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: white;
 }
 
@@ -286,13 +286,6 @@ a:focus {
   color: #71a3b6;
 }
 
-#portfolio {
-  background-color: #71a3b6;
-}
-#portfolio h2 {
-  padding-bottom: 1.25em;
-}
-
 /* Check out some of my projects button */
 .goToPortfolio {
   background: white;
@@ -302,8 +295,27 @@ a:focus {
 }
 .goToPortfolio:hover {
   background: white;
-  color:  #092561!important;
+  color: #092561 !important;
   text-decoration: none;
+}
+
+/* Portfolio styling */
+.portfolioContainer {
+  text-align: center !important;
+}
+
+h5 {
+  font-family: 'Quicksand', sans-serif;
+  color: #020918;
+  font-size: 1.4em;
+}
+
+.box {
+  max-width: 360px;
+  max-height: 210px;
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-block;
 }
 
 @media screen and (min-width: 768px) {
@@ -330,17 +342,11 @@ a:focus {
     margin-bottom: 10%;
   }
 }
-.portfolio-projects--btn {
-  background: transparent;
-  color: #020918;
-  border: 1px solid #020918;
-  border-radius: 5px;
-  margin-bottom: 1.25em;
+
+.portfolio-projects {
+  display: inline-block !important;
 }
-.portfolio-projects--btn:hover {
-  background: #020918;
-  color: white;
-}
+
 .portfolio-projects--image {
   margin-bottom: 1.875em;
   height: 200px;
@@ -368,8 +374,7 @@ a:focus {
   background: #020918;
 }
 
-.portfolio-projects--image:hover:after,
-.portfolio-projects--image:hover:before {
+.portfolio-projects--image:hover {
   opacity: 0.7;
   filter: alpha(opacity=70); /* For IE8 and earlier */
 }
@@ -456,17 +461,17 @@ a:focus {
   }
 
   a[href]:after {
-    content: " (" attr(href) ")";
+    content: ' (' attr(href) ')';
   }
 
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    content: ' (' attr(title) ')';
   }
 
   .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
+  a[href^='javascript:']:after,
+  a[href^='#']:after {
+    content: '';
   }
 
   pre,
@@ -503,5 +508,3 @@ a:focus {
     page-break-after: avoid;
   }
 }
-
-
