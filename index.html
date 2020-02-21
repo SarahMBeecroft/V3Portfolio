@@ -127,8 +127,8 @@
 
         <div class="row break">
           <div class="col-md-6 about-last">
-            <button id="nav-portfolio"><a href="#portfolio" class="goToPortfolio">Check out some of my projects<span
-                  class="glyphicon glyphicon-arrow-down"></span></a></button>
+            <a href="#portfolio"><button id="nav-portfolio" class="goToPortfolio">Check out some of my projects&nbsp;<span
+                  class="glyphicon glyphicon-arrow-down"></span></button></a>
           </div>
         </div>
 
@@ -137,45 +137,45 @@
 
 
     <!-- Portfolio Section -->
-    <div id="portfolio" class="row cover">
+    <div id="portfolio" class="row portfolioCover">
       <h2 class="text-center portfolioHeader">Portfolio</h2>
     </div>
 
     <div class="container-fluid portfolioContainer">
     
       <div class="row">
-        <div class="col-md-3 col-xs-3">
+        <div class="col-md-3">
           <h5> <a href="https://github.com/SarahMBeecroft/Project-1" target="_blank"><i
-            class="fab fa-github-alt"></i></a>
+            class="fab fa-github-alt portfolioIcon"></i></a>
         &nbsp;SuperSearch</h5>
-          <div class="box box1">
+          <div class="box">
           <a href="https://sarahmbeecroft.github.io/Project-1/" target="_blank"><img src="./img/supersearch.jpg"
                 class="portfolio-projects--image"></a>
           </div>
         </div>
 
-        <div class="col-md-3 col-xs-3">
+        <div class="col-md-3">
           <h5> <a href="https://github.com/SarahMBeecroft/Word-Guess-Game" target="_blank"><i
-              class="fab fa-github-alt"></i></a>
+              class="fab fa-github-alt portfolioIcon"></i></a>
           &nbsp;Star Wars Hangman</h5>
-          <div class="box box3">
+          <div class="box">
             <a href="https://sarahmbeecroft.github.io/Word-Guess-Game/" target="_blank"><img src="./img/starwars.jpg"
                 class="portfolio-projects--image"></a>
           </div>
         </div>
 
-        <div class="col-md-3 col-xs-3">
+        <div class="col-md-3">
           <h5><a href="https://github.com/SarahMBeecroft/Quote_Generator" target="_blank"><i
-              class="fab fa-github-alt"></i></a>
+              class="fab fa-github-alt portfolioIcon"></i></a>
          Rick and Morty Quote Generator</h5>
-          <div class="box box1">
+          <div class="box">
             <a href="https://sarahmbeecroft.github.io/Quote_Generator/" target="_blank"><img
                 src="./img/rickandmorty.jpg" class="portfolio-projects--image"></a>
           </div>
         </div>
 
-        <div class="col-md-3 col-xs-3">
-            <h5><a href="https://github.com/SarahMBeecroft/GifTastic" target="_blank"><i class="fab fa-github-alt"></i></a>
+        <div class="col-md-3">
+            <h5><a href="https://github.com/SarahMBeecroft/GifTastic" target="_blank"><i class="fab fa-github-alt portfolioIcon"></i></a>
           &nbsp;Reaction GIF Generator</h5>
           <div class="box box6">
             <a href="https://sarahmbeecroft.github.io/GifTastic/" target="_blank"><img src="./img/reaction.jpeg"
@@ -198,13 +198,13 @@
 
       <ul>
         <a href="https://www.linkedin.com/in/sarah-beecroft-347b8747/" target="_blank">
-          <li><i class="fa fa-linkedin-square"></i> LinkedIn</li>
+          <li><i class="fab fa-linkedin-square"></i> LinkedIn</li>
         </a>
         <a href="https://github.com/SarahMBeecroft" target="_blank">
-          <li><i class="fa fa-github"></i> Github</li>
+          <li><i class="fab fa-github"></i> Github</li>
         </a>
         <a href="https://twitter.com/sarah_bean" target="_blank">
-          <li><i class="fa fa-twitter"></i> Twitter</li>
+          <li><i class="fab fa-twitter"></i> Twitter</li>
         </a>
       </ul>
     </div>
@@ -231,9 +231,9 @@
     $(document).ready(function () {
 
       // Redirects http to https
-      //if (window.location.protocol != 'https:') {
-      // location.href = location.href.replace("http://", "https://");
-      //}
+      if (window.location.protocol != 'https:') {
+       location.href = location.href.replace("http://", "https://");
+    }
 
       // Transition effect for navbar and back-to-top icon
       $(window).scroll(function () {

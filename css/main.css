@@ -197,6 +197,11 @@ a:focus {
 .cover {
   padding: 10% 0 10% 0;
 }
+
+.portfolioCover {
+  padding: 6% 0 2% 0;
+}
+
 .cover.top {
   padding: 15% 0 10% 0;
   height: 100vh;
@@ -288,20 +293,29 @@ a:focus {
 
 /* Check out some of my projects button */
 .goToPortfolio {
-  background: white;
-  color: #020918;
-  border-radius: 5px;
+  color: white;
+  background: #020918 !important;
   margin-bottom: 1.25em;
+  height: 2.5em;
+  border: none;
 }
 .goToPortfolio:hover {
-  background: white;
-  color: #092561 !important;
-  text-decoration: none;
+  color: white !important;
+  text-decoration: underline;
+}
+
+.portfolioIcon {
+  color: #020918;
+}
+
+.portfolioIcon:hover {
+  color: white;
 }
 
 /* Portfolio styling */
 .portfolioContainer {
   text-align: center !important;
+  margin-bottom: 2.5em;
 }
 
 h5 {
