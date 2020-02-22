@@ -231,6 +231,11 @@ a:focus {
   }
 }
 
+/* About me styling */
+.text-center {
+  margin-top: 1em;
+}
+
 #about {
   background-color: #020918;
 }
