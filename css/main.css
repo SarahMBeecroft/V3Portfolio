@@ -232,15 +232,12 @@ a:focus {
 }
 
 /* About me styling */
-.text-center {
-  margin-top: 1em;
-}
-
 #about {
   background-color: #020918;
 }
 #about h2 {
   color: #71a3b6;
+  margin-top: 2em;
 }
 
 .profile-img {
@@ -416,6 +413,7 @@ h5 {
 }
 #contact h2 {
   color: #71a3b6;
+  margin-top: 2em;
 }
 
 .contact-social-icons p {
