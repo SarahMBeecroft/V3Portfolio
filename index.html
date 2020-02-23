@@ -86,8 +86,11 @@
 
         <div class="row">
           <div class="col-xs-12 center-block text-center">
-            <a href="#about"><span id="scrollIcon" class="front-glyph glyphicon glyphicon-menu-down"
-                aria-hidden="true"></span></a>
+            <a href="#about"><span id="scrollIcon" <i class="fas fa-chevron-down"></i></span></a>
+
+           
+
+
           </div>
         </div>
 
@@ -247,9 +250,9 @@
     $(document).ready(function () {
 
       // Redirects http to https
-      if (window.location.protocol != 'https:') {
-       location.href = location.href.replace("http://", "https://");
-    }
+    //   if (window.location.protocol != 'https:') {
+    //    location.href = location.href.replace("http://", "https://");
+    // }
 
       // Transition effect for navbar and back-to-top icon
       $(window).scroll(function () {
