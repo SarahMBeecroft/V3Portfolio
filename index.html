@@ -27,6 +27,13 @@
 
 <body>
 
+<!-- http to https redirect script, putting here instead of bottom to allow for page to load faster -->
+<script>
+    if (window.location.protocol != 'https:') {
+        location.href = location.href.replace("http://", "https://");
+      }
+</script>
+
   <!-- Fixed navbar -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -240,17 +247,13 @@
   <script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
   <script>
 
-    $(document).ready(function () {
 
-      // Redirects http to https
-      //   if (window.location.protocol != 'https:') {
-      //    location.href = location.href.replace("http://", "https://");
-      // }
+    $(document).ready(function () {
 
       // Transition effect for navbar and back-to-top icon
       $(window).scroll(function () {
-        // checks if window is scrolled more than 500px, adds/removes solid class
-        if ($(this).scrollTop() > 0) {
+        // Checks to see if window is scrolled more than 500px, adds/removes solid class if so
+        if ($(this).scrollTop() > 500) {
           $('.navbar').addClass('solid');
           $('.back-to-top').addClass('visible');
         } else {
