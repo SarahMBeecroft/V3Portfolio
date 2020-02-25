@@ -89,6 +89,7 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
 h1 {
   font-family: 'Quicksand', sans-serif;
   font-size: 52px;
@@ -214,14 +215,17 @@ a:focus {
 .navbar-default .navbar-toggle {
   border-color: white;
 }
+
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #020918;
 }
+
 .navbar-default .navbar-toggle .icon-bar {
   color: white;
   background-color: white;
 }
+
 .navbar-default .navbar-collapse.collapse.in ul {
   background-color: #020918;
 }
@@ -232,6 +236,7 @@ a:focus {
   transition: background-color 1s ease 0s;
   box-shadow: 0 0 4px rgba(7, 55, 74, 0.2);
 }
+
 .navbar.solid .navbar-brand {
   display: inline-block;
   color: white;
@@ -256,6 +261,7 @@ a:focus {
   display: flex;
   background-color: #71a3b6;
 }
+
 .cover.bottom {
   padding: 10% 0 10% 0;
 }
@@ -391,6 +397,19 @@ h5 {
   display: inline-block;
 }
 
+/* Media query to make portfolio more mobile responsive on special class */
+@media screen and (max-width: 1366px) {
+  .responsivePortfolio {
+    margin: 0em 4.5em 0em 4.5em;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  .responsivePortfolio {
+    margin: 0em 4.5em 0em 0.5em;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .portfolio-projects {
     margin-top: 0.625em;
@@ -496,22 +515,6 @@ h5 {
   height: 30px;
   background-color: #020918;
   color: white;
-}
-
-#scrollIcon,
-#scrollTopIcon {
-  margin-top: 10px;
-  padding: 10px;
-  font-size: 1.5em;
-  color: #020918;
-  border: solid 2px #020918;
-  border-radius: 50%;
-}
-
-#scrollTopIcon {
-  font-size: 1em;
-  color: white;
-  border-color: white;
 }
 
 .back-to-top {
