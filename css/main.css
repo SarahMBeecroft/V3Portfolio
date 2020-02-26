@@ -305,8 +305,9 @@ a:focus {
 
 .profile-img {
   margin-bottom: 15px;
+  height: 12.5em;
+  width: 10em;
   border-radius: 50%;
-  width: 160px;
 }
 
 .about-tools {
