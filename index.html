@@ -27,19 +27,24 @@
 
 <body>
 
-<!-- http to https redirect script, putting here instead of bottom to allow for page to load faster -->
-<script>
+  <!-- http to https redirect script, putting here instead of bottom to allow for page to load faster -->
+  <script>
     if (window.location.protocol != 'https:') {
         location.href = location.href.replace("http://", "https://");
       }
-</script>
+  </script>
+
+
+
+  <!-- Begin page content -->
+  <div class="container-fluid">
 
   <!-- Fixed navbar -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-          aria-expanded="false" aria-controls="navbar">
+        <button type="button" class="navbar-toggle collapsed" id="toggleButton" data-toggle="collapse"
+          data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -61,8 +66,7 @@
     </div>
   </nav>
 
-  <!-- Begin page content -->
-  <div class="container-fluid">
+
 
     <div class="row cover top">
 
@@ -108,7 +112,7 @@
       <div class="row">
 
         <div class="col-md-6 text-center about-info">
-          <img class="img-circle text-center profile-img" src="img/mee.jpg">
+          <img class="img-circle text-center profile-img" src="img/ProfilePic4.jpg">
 
           <p class="text-center"><strong>Hi, I'm Sarah!</strong> I'm a full stack web developer with a digital marketing
             background. I've
@@ -210,23 +214,23 @@
       <p class="text-center contact-email">Get in touch with me&nbsp&nbsp<i class="fas fa-long-arrow-alt-right"></i>
 
 
-        <a href="mailto:contact@sarahbeecroft.me" id="emailLink">contact@sarahbeecroft.me</p></a>
+        <a href="mailto:contact@sarahbeecroft.me" id="emailLink">contact@sarahbeecroft.me</a>
 
-      <div class="text-center contact-social-icons">
-        <p>Or find me on:</p>
+        <div class="text-center contact-social-icons">
+          <p>Or find me on:</p>
 
-        <ul>
-          <a href="https://www.linkedin.com/in/sarah-beecroft-347b8747/" target="_blank">
-            <li><i class="fab fa-linkedin-square"></i> LinkedIn</li>
-          </a>
-          <a href="https://github.com/SarahMBeecroft" target="_blank">
-            <li><i class="fab fa-github"></i> Github</li>
-          </a>
-          <a href="https://twitter.com/sarah_bean" target="_blank">
-            <li><i class="fab fa-twitter"></i> Twitter</li>
-          </a>
-        </ul>
-      </div>
+          <ul>
+            <a href="https://www.linkedin.com/in/sarah-beecroft-347b8747/" target="_blank">
+              <li><i class="fab fa-linkedin-square"></i> LinkedIn</li>
+            </a>
+            <a href="https://github.com/SarahMBeecroft" target="_blank">
+              <li><i class="fab fa-github"></i> Github</li>
+            </a>
+            <a href="https://twitter.com/sarah_bean" target="_blank">
+              <li><i class="fab fa-twitter"></i> Twitter</li>
+            </a>
+          </ul>
+        </div>
 
     </div><!-- End #Contact -->
 
@@ -261,9 +265,11 @@
           $('.back-to-top').removeClass('visible');
         }
 
-        // Adds logic to keep hamburger menu all dark blue on mobile home page
+      });
 
-        
+      // Adds logic to keep hamburger menu all dark blue on mobile home page
+      $("#toggleButton").click(function () {
+        $("div").css('background-color', '#020918').fadeOut(10000);
       });
 
       // Scrolling effect for Arrow icons
