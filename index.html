@@ -29,9 +29,9 @@
 
   <!-- http to https redirect script, putting here instead of bottom to allow for page to load faster -->
   <script>
-    if (window.location.protocol != 'https:') {
-        location.href = location.href.replace("http://", "https://");
-      }
+    // if (window.location.protocol != 'https:') {
+    //     location.href = location.href.replace("http://", "https://");
+    //   }
   </script>
 
 
@@ -68,7 +68,7 @@
 
 
 
-    <div class="row cover top">
+    <div class="row cover top centerContent">
 
       <div class="col-xs-12">
 
@@ -98,7 +98,7 @@
         <!-- Down arrow icon -->
         <div class="row">
           <div class="col-xs-12 center-block text-center">
-            <a href="#about" id="home-about"><i class="fas fa-arrow-down fa-2x"></i></a>
+            <a href="#about" id="home-about"><i class="fas fa-arrow-down fa-2x" id="downArrow"></i></a>
           </div>
         </div>
 
@@ -209,7 +209,7 @@
 
     </div><!-- End #Portfolio -->
 
-    <div id="contact" class="row cover bottom">
+    <div id="contact" class="row cover bottom centerContent">
       <h2 class="text-center contact-header">Contact Me</h2>
       <p class="text-center contact-email">Get in touch with me&nbsp&nbsp<i class="fas fa-long-arrow-alt-right"></i>
 

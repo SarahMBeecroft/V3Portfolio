@@ -128,7 +128,9 @@ a:focus {
 
 /* Social icons on home page */
 .contact-social-icons2 {
-  position: relative;
+  display: inline-block;
+  margin-right: 3em;
+  width: 380px !important;
 }
 
 .contact-social-icons2 p {
@@ -144,13 +146,15 @@ a:focus {
 }
 .contact-social-icons2 ul a li {
   display: inline-block;
-  margin: 1em 2em 12em 0em;
+  padding: 0.5em;
 }
 
 /* Media queries for social icons on home page */
 @media screen and (max-width: 600px) {
   .contact-social-icons2 {
-    position: relative;
+    display: inline-block;
+    margin-right: 3.5em;
+    width: 340px !important;
   }
 
   .contact-social-icons2 p {
@@ -166,7 +170,7 @@ a:focus {
   }
   .contact-social-icons2 ul a li {
     display: inline-block;
-    margin: 1em 0.8em 8em 0em;
+    padding: 0.2em;
   }
 }
 
@@ -294,6 +298,15 @@ a:focus {
   color: white;
 }
 
+#downArrow {
+  margin-top: 2em;
+}
+
+/* Class to add to div to center its contents */
+.centerContent {
+  text-align: center !important;
+}
+
 /* About me styling */
 #about {
   background-color: #020918;
@@ -304,14 +317,18 @@ a:focus {
 }
 
 .profile-img {
-  margin-bottom: 15px;
-  height: 12.5em;
-  width: 10em;
+  margin-bottom: 1em;
+  height: 12em;
+  width: 9.5em;
   border-radius: 50%;
 }
 
+.profile-img:hover {
+  opacity: 80%;
+}
+
 .about-tools {
-  margin-top: 60px;
+  margin-top: 2em;
 }
 
 .about,
@@ -493,6 +510,12 @@ h5 {
   margin-top: 2em;
 }
 
+.contact-social-icons {
+  display: inline-block;
+  margin-right: 2.5em;
+  width: 380px !important;
+}
+
 .contact-social-icons p {
   color: #71a3b6;
 }
@@ -506,7 +529,7 @@ h5 {
 }
 .contact-social-icons ul a li {
   display: inline-block;
-  padding: 1%;
+  padding: 0.5em;
 }
 
 .footer {
