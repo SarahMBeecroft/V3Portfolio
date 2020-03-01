@@ -3,19 +3,18 @@ body {
   overflow-x: hidden;
 }
 
+.content {
+  max-width: 500px !important;
+  margin: auto !important;
+}
+
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
-@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento');
-.about-tools ul li,
-.contact-social-icons ul a li {
-  text-align: center;
-}
 
 .center {
-  float: none;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 960px !important;
+  margin: auto !important;
 }
 
 .break {
@@ -335,7 +334,7 @@ a:focus {
 .about-info,
 .about-tools,
 .about-last {
-  padding: 4% 8% 1% 10%;
+  padding: 4% 8% 0% 10%;
   font-size: 1.25em;
 }
 .about-tools {
@@ -343,6 +342,7 @@ a:focus {
   font-weight: 700;
   font-size: 1.5em;
 }
+
 @media screen and (min-width: 992px) {
   .about-tools {
     padding-top: 5.625em;
@@ -428,7 +428,7 @@ h5 {
 
 @media screen and (max-width: 411px) {
   .responsivePortfolio {
-    margin: 0em 4.5em 0em 0.5em;
+    margin: 0em 8em 0em 0em;
   }
 }
 
