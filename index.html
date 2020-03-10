@@ -30,9 +30,9 @@
 
   <!-- http to https redirect script, putting here instead of bottom to allow for page to load faster -->
   <script>
-    // if (window.location.protocol != 'https:') {
-    //     location.href = location.href.replace("http://", "https://");
-    //   }
+    if (window.location.protocol != 'https:') {
+        location.href = location.href.replace("http://", "https://");
+      }
   </script>
 
 
@@ -81,7 +81,7 @@
         </div>
 
         <!-- Social icons -->
-        <div class="text-center contact-social-icons2">
+        <div class="row text-center contact-social-icons2">
 
           <ul>
             <a href="https://www.linkedin.com/in/sarah-beecroft-347b8747/" target="_blank">
@@ -110,7 +110,6 @@
 
     <div id="about" class="row cover">
       <h2 class="text-center" id="aboutMe">About Me</h2>
-      <div class="row">
 
         <div class="col-md-6 text-center about-info">
           <img class="profile-img" src="img/ProfilePic4.jpg">
@@ -153,7 +152,6 @@
         </div>
         <!--/.about-tools -->
 
-      </div>
     </div><!-- End #About -->
 
 
@@ -162,7 +160,7 @@
       <h2 class="text-center portfolioHeader">Portfolio</h2>
 
 
-      <div class="col-md-3 responsivePortfolio align-self-center">
+      <div class="col-md-3 align-self-center">
         <h5> <a href="https://github.com/SarahMBeecroft/Project-1" target="_blank"><i
               class="fab fa-github-alt portfolioIcon"></i></a>
           &nbsp;SuperSearch</h5>
@@ -172,7 +170,7 @@
         </div>
       </div>
 
-      <div class="col-md-3 responsivePortfolio align-self-center">
+      <div class="col-md-3 align-self-center">
         <h5> <a href="https://github.com/SarahMBeecroft/Word-Guess-Game" target="_blank"><i
               class="fab fa-github-alt portfolioIcon"></i></a>
           &nbsp;Star Wars Hangman</h5>
@@ -182,7 +180,7 @@
         </div>
       </div>
 
-      <div class="col-md-3 responsivePortfolio align-self-center">
+      <div class="col-md-3 align-self-center">
         <h5><a href="https://github.com/SarahMBeecroft/Quote_Generator" target="_blank"><i
               class="fab fa-github-alt portfolioIcon"></i></a>
           Rick and Morty Quote Generator</h5>
@@ -192,7 +190,7 @@
         </div>
       </div>
 
-      <div class="col-md-3 responsivePortfolio align-self-center">
+      <div class="col-md-3 align-self-center">
         <h5><a href="https://github.com/SarahMBeecroft/GifTastic" target="_blank"><i
               class="fab fa-github-alt portfolioIcon"></i></a>
           &nbsp;Reaction GIF Generator</h5>
@@ -202,8 +200,6 @@
         </div>
       </div>
 
-
-      
 
     </div><!-- End #Portfolio -->
 

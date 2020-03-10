@@ -3,15 +3,6 @@ body {
   overflow-x: hidden !important;
 }
 
-/* Small devices (tablets, 768px and up) */
-/* Medium devices (desktops, 992px and up) */
-/* Large devices (large desktops, 1200px and up) */
-
-.center {
-  max-width: 960px !important;
-  margin: auto !important;
-}
-
 .break {
   clear: both;
   margin-top: 10px;
@@ -461,51 +452,43 @@ h5 {
 /* Responsive tags */
 
 /* Changes kick in when screen is 980px or smaller */
-@media (max-width: 980px) {
-  .container-fluid {
-    width: 980px !important;
+@media only screen and (max-width: 1000px) {
+  .div {
+    width: 1000px !important;
+  }
+  .box {
+    max-width: 260px;
+    max-height: 180px;
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .portfolio-projects {
+    display: inline-block !important;
+  }
+
+  .portfolio-projects--image {
+    margin-bottom: 1.5em;
+    height: 160px;
+    width: 280px;
   }
 }
 
 /* Changes kick in when screen is 768px or smaller */
-@media (max-width: 768px) {
-  .container-fluid {
+@media only screen and (max-width: 768px) {
+  .div {
     width: 768px !important;
   }
 }
 
 /* Changes kick in when screen is 640px or smaller */
-@media (max-width: 640px) {
+@media only screen and (max-width: 640px) {
   /* Sets max width of 640px for all content  */
-  .container-fluid {
+  .div {
     width: 640px !important;
   }
-
-  .about-info {
-    left: 0.5em !important;
-    background-color: #020918 !important;
-  }
-
-  .about-tools {
-    right: 0.5em !important;
-    background-color: #020918 !important;
-  }
-}
-
-/* Changes kick in when screen is 420px or smaller */
-@media (max-width: 420px) {
-  /* Sets max width of 640px for all content  */
-  .container-fluid {
-    width: 420px !important;
-  }
-
-  .about-info {
-    left: 0.5em !important;
-    background-color: #020918 !important;
-  }
-
-  .about-tools {
-    right: 0.5em !important;
+  #about {
     background-color: #020918 !important;
   }
 }
