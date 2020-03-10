@@ -23,15 +23,16 @@
 
   <!-- Custom styles for this template -->
   <link href="css/main.css" rel="stylesheet">
+
 </head>
 
 <body>
 
   <!-- http to https redirect script, putting here instead of bottom to allow for page to load faster -->
   <script>
-    if (window.location.protocol != 'https:') {
-        location.href = location.href.replace("http://", "https://");
-      }
+    // if (window.location.protocol != 'https:') {
+    //     location.href = location.href.replace("http://", "https://");
+    //   }
   </script>
 
 
@@ -39,42 +40,42 @@
   <!-- Begin page content -->
   <div class="container-fluid">
 
-  <!-- Fixed navbar -->
-  <nav class="navbar navbar-default navbar-fixed-top" id="backgroundColor">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" id="toggleButton" data-toggle="collapse"
-          data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Sarah Beecroft</a>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="backgroundColor">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" id="toggleButton" data-toggle="collapse"
+            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Sarah Beecroft</a>
+        </div>
+        <!--/.navbar-header -->
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-title" id="nav-about"><a href="#about">About</a></li>
+            <li class="nav-title" id="nav-portfolio"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav-title" id="nav-contact"><a href="#contact">Contact</a></li>
+            <li class="nav-title"><a href="https://portfolio.sarahbeecroft.me/Sarah_Beecroft_Resume_February_2020.pdf"
+                target="_blank" id="resume">Resume</a></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
       </div>
-      <!--/.navbar-header -->
-      <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="nav-title" id="nav-about"><a href="#about">About</a></li>
-          <li class="nav-title" id="nav-portfolio"><a href="#portfolio">Portfolio</a></li>
-          <li class="nav-title" id="nav-contact"><a href="#contact">Contact</a></li>
-          <li class="nav-title"><a href="https://portfolio.sarahbeecroft.me/Sarah_Beecroft_Resume_February_2020.pdf"
-              target="_blank" id="resume">Resume</a></li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-  </nav>
+    </nav>
 
 
 
-    <div class="row cover top centerContent">
+    <div class="row cover top" id="centerRow">
 
       <div class="col-xs-12">
 
         <div class="row">
           <div class="col-xs-12 headline">
-            <h1 class="text-center">Hi, I'm Sarah</h1>
+            <h1 class="text-center intro">Hi, I'm Sarah</h1>
             <p class="lead text-center">A Full Stack Web Developer</p>
           </div>
         </div>
@@ -130,7 +131,7 @@
         <div class="col-md-6 about-tools">
           <p class="text-center">My skills include:</p>
           <div class="col-xs-6">
-            <ul>
+            <ul class="text-center">
               <li>HTML5</li>
               <li>CSS3</li>
               <li>Bootstrap</li>
@@ -140,7 +141,7 @@
           </div>
 
           <div class="col-xs-6">
-            <ul>
+            <ul class="text-center">
               <li>jQuery</li>
               <li>React</li>
               <li>Git</li>
@@ -159,64 +160,63 @@
     <!-- Portfolio Section -->
     <div id="portfolio" class="row portfolioCover">
       <h2 class="text-center portfolioHeader">Portfolio</h2>
-    </div>
 
-    <div class="container-fluid portfolioContainer">
 
-      <div class="row centerPortfolio">
-        <div class="col-md-3 responsivePortfolio align-self-center">
-          <h5> <a href="https://github.com/SarahMBeecroft/Project-1" target="_blank"><i
-                class="fab fa-github-alt portfolioIcon"></i></a>
-            &nbsp;SuperSearch</h5>
-          <div class="box">
-            <a href="https://sarahmbeecroft.github.io/Project-1/" target="_blank"><img src="./img/supersearch.jpg"
-                class="portfolio-projects--image"></a>
-          </div>
+      <div class="col-md-3 responsivePortfolio align-self-center">
+        <h5> <a href="https://github.com/SarahMBeecroft/Project-1" target="_blank"><i
+              class="fab fa-github-alt portfolioIcon"></i></a>
+          &nbsp;SuperSearch</h5>
+        <div class="box">
+          <a href="https://sarahmbeecroft.github.io/Project-1/" target="_blank"><img src="./img/supersearch.jpg"
+              class="portfolio-projects--image"></a>
         </div>
+      </div>
 
-        <div class="col-md-3 responsivePortfolio align-self-center">
-          <h5> <a href="https://github.com/SarahMBeecroft/Word-Guess-Game" target="_blank"><i
-                class="fab fa-github-alt portfolioIcon"></i></a>
-            &nbsp;Star Wars Hangman</h5>
-          <div class="box">
-            <a href="https://sarahmbeecroft.github.io/Word-Guess-Game/" target="_blank"><img src="./img/starwars.jpg"
-                class="portfolio-projects--image"></a>
-          </div>
+      <div class="col-md-3 responsivePortfolio align-self-center">
+        <h5> <a href="https://github.com/SarahMBeecroft/Word-Guess-Game" target="_blank"><i
+              class="fab fa-github-alt portfolioIcon"></i></a>
+          &nbsp;Star Wars Hangman</h5>
+        <div class="box">
+          <a href="https://sarahmbeecroft.github.io/Word-Guess-Game/" target="_blank"><img src="./img/starwars.jpg"
+              class="portfolio-projects--image"></a>
         </div>
+      </div>
 
-        <div class="col-md-3 responsivePortfolio align-self-center">
-          <h5><a href="https://github.com/SarahMBeecroft/Quote_Generator" target="_blank"><i
-                class="fab fa-github-alt portfolioIcon"></i></a>
-            Rick and Morty Quote Generator</h5>
-          <div class="box">
-            <a href="https://sarahmbeecroft.github.io/Quote_Generator/" target="_blank"><img
-                src="./img/rickandmorty.jpg" class="portfolio-projects--image"></a>
-          </div>
+      <div class="col-md-3 responsivePortfolio align-self-center">
+        <h5><a href="https://github.com/SarahMBeecroft/Quote_Generator" target="_blank"><i
+              class="fab fa-github-alt portfolioIcon"></i></a>
+          Rick and Morty Quote Generator</h5>
+        <div class="box">
+          <a href="https://sarahmbeecroft.github.io/Quote_Generator/" target="_blank"><img
+              src="./img/rickandmorty.jpg" class="portfolio-projects--image"></a>
         </div>
+      </div>
 
-        <div class="col-md-3 responsivePortfolio align-self-center">
-          <h5><a href="https://github.com/SarahMBeecroft/GifTastic" target="_blank"><i
-                class="fab fa-github-alt portfolioIcon"></i></a>
-            &nbsp;Reaction GIF Generator</h5>
-          <div class="box">
-            <a href="https://sarahmbeecroft.github.io/GifTastic/" target="_blank"><img src="./img/reaction.jpeg"
-                class="portfolio-projects--image"></a>
-          </div>
+      <div class="col-md-3 responsivePortfolio align-self-center">
+        <h5><a href="https://github.com/SarahMBeecroft/GifTastic" target="_blank"><i
+              class="fab fa-github-alt portfolioIcon"></i></a>
+          &nbsp;Reaction GIF Generator</h5>
+        <div class="box">
+          <a href="https://sarahmbeecroft.github.io/GifTastic/" target="_blank"><img src="./img/reaction.jpeg"
+              class="portfolio-projects--image"></a>
         </div>
+      </div>
 
 
-      </div><!-- End Row -->
+      
 
     </div><!-- End #Portfolio -->
 
-    <div id="contact" class="row cover bottom centerContent">
+    
+
+    <div id="contact" class="row cover bottom text-center">
       <h2 class="text-center contact-header">Contact Me</h2>
       <p class="text-center contact-email">Get in touch with me&nbsp&nbsp<i class="fas fa-long-arrow-alt-right"></i>
 
 
         <a href="mailto:contact@sarahbeecroft.me" id="emailLink">contact@sarahbeecroft.me</a>
 
-        <div class="text-center contact-social-icons">
+        <div class="contact-social-icons">
           <p>Or find me on:</p>
 
           <ul>
@@ -234,14 +234,16 @@
 
     </div><!-- End #Contact -->
 
-  </div><!-- End .container-fluid -->
-
-  <footer class="footer">
-    <div class="container">
-      <p class="pull-right center">&copy 2020 Sarah Beecroft</p>
+  
+  <div class="row">
+  <footer class="footer" id="centerRow">
+    <div>
+      <p class="text-center">&copy 2020 Sarah Beecroft</p>
     </div>
   </footer>
+  </div><!-- End row -->
 
+</div><!-- End .container-fluid -->
 
   <!-- Bootstrap core JavaScript
 ================================================== -->

@@ -1,11 +1,6 @@
 /* Removes horizontal scroll bar from page */
 body {
-  overflow-x: hidden;
-}
-
-.content {
-  max-width: 500px !important;
-  margin: auto !important;
+  overflow-x: hidden !important;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -22,44 +17,10 @@ body {
   margin-top: 10px;
 }
 
-@media (max-width: 460px) {
-  .container-fluid {
-    overflow-x: hidden;
-  }
-
-  .portfolio-projects--image {
-    overflow-y: hidden;
-    margin-left: 8px;
-  }
+.pull-left-lg {
+  float: left !important;
 }
 
-@media (min-width: 768px) {
-  .pull-right-sm {
-    float: right !important;
-  }
-
-  .pull-left-sm {
-    float: left !important;
-  }
-}
-@media (min-width: 992px) {
-  .pull-right-md {
-    float: right !important;
-  }
-
-  .pull-left-md {
-    float: left !important;
-  }
-}
-@media (min-width: 1200px) {
-  .pull-right-lg {
-    float: right !important;
-  }
-
-  .pull-left-lg {
-    float: left !important;
-  }
-}
 * {
   box-sizing: border-box;
 }
@@ -108,8 +69,14 @@ p {
   color: white;
 }
 
+/* Hi, I'm Sarah */
+.intro {
+  font-size: 5em !important;
+}
+
+/* A Full Stack Web Developer */
 .lead {
-  font-size: 21px;
+  font-size: 2em !important;
 }
 
 body > .container-fluid {
@@ -125,54 +92,7 @@ a:focus {
   outline: none !important;
 }
 
-/* Social icons on home page */
-.contact-social-icons2 {
-  display: inline-block;
-  margin-right: 3em;
-  width: 380px !important;
-}
-
-.contact-social-icons2 p {
-  color: #020918;
-}
-.contact-social-icons2 ul a {
-  color: #020918;
-  list-style: none;
-}
-.contact-social-icons2 ul a:hover {
-  text-decoration: none;
-  color: white;
-}
-.contact-social-icons2 ul a li {
-  display: inline-block;
-  padding: 0.5em;
-}
-
-/* Media queries for social icons on home page */
-@media screen and (max-width: 600px) {
-  .contact-social-icons2 {
-    display: inline-block;
-    margin-right: 3.5em;
-    width: 340px !important;
-  }
-
-  .contact-social-icons2 p {
-    color: #020918;
-  }
-  .contact-social-icons2 ul a {
-    color: #020918;
-    list-style: none;
-  }
-  .contact-social-icons2 ul a:hover {
-    text-decoration: none;
-    color: white;
-  }
-  .contact-social-icons2 ul a li {
-    display: inline-block;
-    padding: 0.2em;
-  }
-}
-
+/* Nav bar styling */
 .navbar {
   height: 70px;
   background-color: transparent;
@@ -251,7 +171,7 @@ a:focus {
 }
 
 .cover {
-  padding: 10% 0 10% 0;
+  padding: 10% 5% 10% 5%;
 }
 
 .portfolioCover {
@@ -288,6 +208,34 @@ a:focus {
   }
 }
 
+/* Centers elements with this id */
+#centerRow {
+  text-align: center !important;
+}
+
+/* Social icons on home page */
+.contact-social-icons2 {
+  display: inline-block !important;
+  margin-right: 3em;
+  width: 380px !important;
+}
+
+.contact-social-icons2 p {
+  color: #020918;
+}
+.contact-social-icons2 ul a {
+  color: #020918;
+  list-style: none;
+}
+.contact-social-icons2 ul a:hover {
+  text-decoration: none;
+  color: white;
+}
+.contact-social-icons2 ul a li {
+  display: inline-block;
+  padding: 0.5em;
+}
+
 /* Down arrow icon on home page */
 #home-about {
   color: #020918;
@@ -299,11 +247,6 @@ a:focus {
 
 #downArrow {
   margin-top: 2em;
-}
-
-/* Class to add to div to center its contents */
-.centerContent {
-  text-align: center !important;
 }
 
 /* About me styling */
@@ -327,7 +270,11 @@ a:focus {
 }
 
 .about-tools {
-  margin-top: 2em;
+  margin-top: 1.6em;
+  right: 2.5em !important;
+  background-color: #020918 !important;
+  font-weight: 700;
+  font-size: 1.6em !important;
 }
 
 .about,
@@ -337,10 +284,10 @@ a:focus {
   padding: 4% 8% 0% 10%;
   font-size: 1.25em;
 }
-.about-tools {
-  padding-top: 4.375em;
-  font-weight: 700;
-  font-size: 1.5em;
+
+.about-info {
+  left: 2.5em !important;
+  background-color: #020918 !important;
 }
 
 @media screen and (min-width: 992px) {
@@ -396,11 +343,6 @@ a:focus {
 }
 
 /* Portfolio styling */
-.portfolioContainer {
-  text-align: center !important;
-  margin-bottom: 2.5em;
-}
-
 .centerPortfolio {
   align-content: inline-block !important;
 }
@@ -417,44 +359,6 @@ h5 {
   overflow: hidden;
   cursor: pointer;
   display: inline-block;
-}
-
-/* Media query to make portfolio more mobile responsive on special class */
-@media screen and (max-width: 1366px) {
-  .responsivePortfolio {
-    margin: 0em 4.5em 0em 4.5em;
-  }
-}
-
-@media screen and (max-width: 411px) {
-  .responsivePortfolio {
-    margin: 0em 8em 0em 0em;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .portfolio-projects {
-    margin-top: 0.625em;
-  }
-}
-.portfolio-projects--title {
-  margin-top: 0.9375em;
-}
-@media screen and (min-width: 768px) {
-  .portfolio-projects--title {
-    margin-top: 20%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .portfolio-projects--title {
-    margin-top: 5%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .portfolio-projects--desc {
-    margin-top: 10%;
-    margin-bottom: 10%;
-  }
 }
 
 .portfolio-projects {
@@ -515,24 +419,25 @@ h5 {
 }
 
 .contact-social-icons {
-  display: inline-block;
-  margin-right: 2.5em;
+  display: inline-block !important;
   width: 380px !important;
 }
 
 .contact-social-icons p {
   color: #71a3b6;
+  display: inline-block !important;
 }
 .contact-social-icons ul a {
   color: #71a3b6;
   list-style: none;
+  display: inline-block !important;
 }
 .contact-social-icons ul a:hover {
   text-decoration: none;
   color: white;
 }
 .contact-social-icons ul a li {
-  display: inline-block;
+  display: inline-block !important;
   padding: 0.5em;
 }
 
@@ -552,64 +457,55 @@ h5 {
   display: block;
 }
 
-@media print {
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
+/* Media Queries */
+/* Responsive tags */
+
+/* Changes kick in when screen is 980px or smaller */
+@media (max-width: 980px) {
+  .container-fluid {
+    width: 980px !important;
+  }
+}
+
+/* Changes kick in when screen is 768px or smaller */
+@media (max-width: 768px) {
+  .container-fluid {
+    width: 768px !important;
+  }
+}
+
+/* Changes kick in when screen is 640px or smaller */
+@media (max-width: 640px) {
+  /* Sets max width of 640px for all content  */
+  .container-fluid {
+    width: 640px !important;
   }
 
-  a,
-  a:visited {
-    text-decoration: underline;
+  .about-info {
+    left: 0.5em !important;
+    background-color: #020918 !important;
   }
 
-  a[href]:after {
-    content: ' (' attr(href) ')';
+  .about-tools {
+    right: 0.5em !important;
+    background-color: #020918 !important;
+  }
+}
+
+/* Changes kick in when screen is 420px or smaller */
+@media (max-width: 420px) {
+  /* Sets max width of 640px for all content  */
+  .container-fluid {
+    width: 420px !important;
   }
 
-  abbr[title]:after {
-    content: ' (' attr(title) ')';
+  .about-info {
+    left: 0.5em !important;
+    background-color: #020918 !important;
   }
 
-  .ir a:after,
-  a[href^='javascript:']:after,
-  a[href^='#']:after {
-    content: '';
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  img {
-    max-width: 100% !important;
-  }
-
-  @page {
-    margin: 0.5cm;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
+  .about-tools {
+    right: 0.5em !important;
+    background-color: #020918 !important;
   }
 }
